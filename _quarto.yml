@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: docs
 
 book:
   title: "中级宏观经济学讲义"

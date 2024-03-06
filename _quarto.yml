@@ -1,0 +1,32 @@
+project:
+  type: book
+
+book:
+  title: "中级宏观经济学讲义"
+  author: "孙瑞 李惟简"
+  date: "2024/3/6"
+  downloads: pdf
+  sidebar:
+    style: docked
+    background: light
+  chapters:
+    - index.qmd
+    - ch1.qmd
+    - ch2.qmd
+    - ch3.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    css: style.css
+  pdf:
+    documentclass: scrarticle
+    include-in-header: 
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+    include-after-body: 
+      text: |
+        \printindex

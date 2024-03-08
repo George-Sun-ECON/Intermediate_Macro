@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Lecture Notes for Intermediate Macroeconomics",
+    "title": "中级宏观经济学讲义",
     "section": "",
     "text": "前言\n本讲义由Quarto Book提供技术支持。本书的生成代码可以在如下的Github仓库获得并下载。\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [

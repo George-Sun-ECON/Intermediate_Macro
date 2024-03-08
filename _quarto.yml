@@ -22,7 +22,7 @@ bibliography: references.bib
 format:
   html: 
     theme: cosmo
-    fontsize: 1.2em
+    fontsize: 1em
     code-fold: true
     html-math-method: katex
     smooth-scroll: true

@@ -39,13 +39,6 @@ format:
     citation-location: margin
   pdf:
     documentclass: ctexbook
-    include-in-header: 
-      text: |
-        \usepackage{makeidx}
-        \makeindex
-    include-after-body: 
-      text: |
-        \printindex
     geometry:
       - top=30mm
       - left=30mm

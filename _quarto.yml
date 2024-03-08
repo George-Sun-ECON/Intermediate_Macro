@@ -5,11 +5,16 @@ project:
 book:
   title: "中级宏观经济学讲义"
   author: "孙瑞，李惟简"
-  date: "2024/3/6"
+  date: "2024/3/8"
   downloads: pdf
   sidebar:
     style: docked
     background: light
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            url:  https://github.com/George-Sun-ECON/Intermediate_Macro
   chapters:
     - index.qmd
     - ch1.qmd
@@ -21,7 +26,7 @@ bibliography: references.bib
 format:
   html: 
     theme: cosmo
-    fontsize: 1em
+    fontsize: 11pt
     code-fold: true
     html-math-method: katex
     smooth-scroll: true
@@ -31,6 +36,7 @@ format:
       warning: false
       message: false
     grid:
+      sidebar-width: 350px
       body-width: 1000px
       margin-width: 250px
       gutter-width: 1.5rem

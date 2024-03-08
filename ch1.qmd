@@ -139,11 +139,11 @@ $$
 		
 由MPL和MPK边际递减的特性，可以画出向下倾斜的长期资本市场和劳动力市场需求曲线，和长期垂直的资本和劳动力供给曲线：
 
-![Image](D:\我的PHD\教学资料\我的助教\中级宏观经济学\Intermediate_Macro\figures\1-1.png)
+![Image](figures/1-1.png)
 
 于是长期的总产出是定值，体现为垂直的长期总供给曲线：
 
-![Image](D:\我的PHD\教学资料\我的助教\中级宏观经济学\Intermediate_Macro\figures\1-2.png)
+![Image](figures/1-2.png)
 
 	
 

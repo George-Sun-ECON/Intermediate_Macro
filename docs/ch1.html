@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>中级宏观经济学讲义 - 1&nbsp; 第一讲（2024/2/22）</title>
+<title>中级宏观经济学讲义 - 1&nbsp; 2024/2/22</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,6 +70,49 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -82,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch1.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">第一讲（2024/2/22）</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch1.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">2024/2/22</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -119,19 +162,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch1.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">第一讲（2024/2/22）</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">2024/2/22</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">第二讲（3月14日）</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./ch3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">第三讲</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">3月14日</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -167,6 +204,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#gdp的测算" id="toc-gdp的测算" class="nav-link" data-scroll-target="#gdp的测算"><span class="header-section-number">1.3.1</span> GDP的测算</a></li>
   <li><a href="#gdp的分解" id="toc-gdp的分解" class="nav-link" data-scroll-target="#gdp的分解"><span class="header-section-number">1.3.2</span> GDP的分解</a></li>
   </ul></li>
+  <li><a href="#物价水平" id="toc-物价水平" class="nav-link" data-scroll-target="#物价水平"><span class="header-section-number">1.4</span> 物价水平</a>
+  <ul class="collapse">
+  <li><a href="#gdp平减指数" id="toc-gdp平减指数" class="nav-link" data-scroll-target="#gdp平减指数"><span class="header-section-number">1.4.1</span> GDP平减指数</a></li>
+  <li><a href="#消费者价格指数" id="toc-消费者价格指数" class="nav-link" data-scroll-target="#消费者价格指数"><span class="header-section-number">1.4.2</span> 消费者价格指数</a></li>
+  </ul></li>
+  <li><a href="#长期产出的来源" id="toc-长期产出的来源" class="nav-link" data-scroll-target="#长期产出的来源"><span class="header-section-number">1.5</span> 长期产出的来源</a></li>
   </ul>
 </nav>
     </div>
@@ -175,7 +218,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">第一讲（2024/2/22）</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">2024/2/22</span></h1>
 </div>
 
 
@@ -257,17 +300,68 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="gdp的分解" class="level3" data-number="1.3.2">
 <h3 data-number="1.3.2" class="anchored" data-anchor-id="gdp的分解"><span class="header-section-number">1.3.2</span> GDP的分解</h3>
-<p><strong>支出法视角下的GDP可以分解为消费、投资、政府购买和净出口四部分。</strong> 体现为以下<strong>均衡式</strong>（该式永远成立）：</p>
-<p>[Y = C + I + G + NX]</p>
-<ul>
-<li><strong>消费(C):</strong> 包括非耐久品、耐久品和服务。其中<strong>耐久品房产属于投资，购买二手商品不计入消费</strong>。</li>
-<li><strong>投资(I):</strong> 包括房地产、基建、固定资产投资和存货。其中<strong>房租和利润不属于生产</strong>，存货变动较大，为研究者所重视。</li>
-<li><strong>政府购买(G):</strong> <strong>不包括转移支付。</strong></li>
-<li><strong>净出口(NX):</strong> 减去进口是因为该部分已被包含在消费。</li>
-</ul>
-
-
+<p><strong>支出法视角下的GDP可以分解为消费、投资、政府购买和净出口四部分。</strong> 体现为以下<strong>均衡式</strong>（该式永远成立）： <span class="math display">
+Y = C + I + G + NX
+</span> - <strong>消费(C):</strong> 包括非耐久品、耐久品和服务。其中<strong>耐久品房产属于投资，购买二手商品不计入消费</strong>。 - <strong>投资(I):</strong> 包括房地产、基建、固定资产投资和存货。其中<strong>房租和利润不属于生产</strong>，存货变动较大，为研究者所重视。 - <strong>政府购买(G):</strong> <strong>不包括转移支付。</strong> - <strong>净出口(NX):</strong> 减去进口是因为该部分已被包含在消费。</p>
 </section>
+</section>
+<section id="物价水平" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="物价水平"><span class="header-section-number">1.4</span> 物价水平</h2>
+<p>物价水平直接决定了经济系统成员的购买能力，因此是受到密切关注的宏观变量。此外统计观察到的经济变量包含了物价的变化，称为。只有剔除掉价格变化后的，才能更准确地反映出和经济系统成员效用相关的因素变化。综上，宏观经济研究需要区分名义变量和实际变量，并估算物价水平。</p>
+<section id="gdp平减指数" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="gdp平减指数"><span class="header-section-number">1.4.1</span> GDP平减指数</h3>
+<p>第一种物价水平变动的计算方式是<strong>GDP平减指数</strong>，是名义GDP和实际GDP的比值。其中<strong>名义GDP</strong>就是以当期物价计算的当期总产出，<strong>实际GDP</strong>是以基期物价计算的当期总产出。 <span class="math display">
+GDP\text{平减指数} = \frac{\text{当期所有商品} \times \text{当期价格水平}}{\text{当期所有商品} \times \text{基期价格水平}} \times 100\%
+</span> - GDP平减指数只包括国内的产品，进口不属于GDP平减指数。 - GDP平减指数会低估物价上升。因为没有考虑基期商品的适应性调整。</p>
+</section>
+<section id="消费者价格指数" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="消费者价格指数"><span class="header-section-number">1.4.2</span> 消费者价格指数</h3>
+<p>第二种物价水平变动的计算方式是，是统计局认定的构成普遍消费者消费习惯的一篮子商品，在当前期和基期的价格之比。<br>
+<span class="math display">
+CPI=\frac{\sum \mbox{一篮子商品} \times \mbox{当期价格水平}}{\sum \mbox{一篮子商品} \times \mbox{基期价格水平}} \times 100\%
+</span> - CPI的一篮子商品只包括消费部分的代表性商品，不包括投资和政府购买。 - CPI会高估物价上升。因为没有考虑当前期商品的适应性调整，也没有考虑质量改进。</p>
+</section>
+</section>
+<section id="长期产出的来源" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="长期产出的来源"><span class="header-section-number">1.5</span> 长期产出的来源</h2>
+<p>经济体的长期产出由要素的投入量所决定，所谓积水成渊也。现实中常关注的要素投入包括资本(K)和劳动(L),总产出(Y)可以表示为 <span class="math display">
+Y=F(K,L)
+</span> 其中生产函数<span class="math inline">F(K,L)</span>代表技术如何将资本和劳动投入组织起来。</p>
+<p>宏观研究中常用一类的生产函数有规模报酬不变(Constant Returns to Scale)的性质，即:<br>
+<span class="math display">
+F(zK,zL) = zF(K,L) \forall z&gt;0
+</span> 规模报酬不变的生产函数中最常用的是柯布-道格拉斯(Cobb–Douglas)生产函数： <span class="math display">
+Y = AK^{\alpha}L^{1-\alpha}
+</span><br>
+其中劳动的边际产值<span class="math inline">MPL</span>，来自对<span class="math inline">L</span>求偏导：<br>
+<span class="math display">
+MPL = \frac{\partial AK^{\alpha}L^{1-\alpha}}{\partial L} = A(1-\alpha)K^{\alpha}L^{-\alpha}
+</span><br>
+竞争性市场条件下，劳动的边际产值等于实际工资，于是可以得到劳动报酬占总产出比重始终是固定值： <span class="math display">
+\frac{WL}{P}/Y=\frac{\partial A(1-\alpha)K^{\alpha}L^{1-\alpha}}{\partial L} /AK^{\alpha}L^{1-\alpha} = 1-\alpha
+</span><br>
+同理，可以得到 <span class="math inline">\frac{KL}{P}/Y=\alpha</span>, 以及 <span class="math inline">PY = RK + WL</span>。基于以上分析，柯布-道格拉斯生产函数在竞争性市场条件下，有如下优良性质：</p>
+<ul>
+<li>产出可以被资本和劳动按照固定比例划分。</li>
+<li>企业经济利润为零，不会无限扩张。</li>
+<li>固定比例的划分符合历史数据呈现的趋势，资本和劳动收入所占比重保持不变。</li>
+</ul>
+<p>由MPL和MPK边际递减的特性，可以画出向下倾斜的长期资本市场和劳动力市场需求曲线，和长期垂直的资本和劳动力供给曲线：</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="D:\我的PHD\教学资料\我的助教\中级宏观经济学\Intermediate_Macro\figures\1-1.png" class="img-fluid figure-img"></p>
+<figcaption>Image</figcaption>
+</figure>
+</div>
+<p>于是长期的总产出是定值，体现为垂直的长期总供给曲线：</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="D:\我的PHD\教学资料\我的助教\中级宏观经济学\Intermediate_Macro\figures\1-2.png" class="img-fluid figure-img"></p>
+<figcaption>Image</figcaption>
+</figure>
+</div>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -665,8 +759,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./ch2.html" class="pagination-link" aria-label="第二讲（3月14日）">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">第二讲（3月14日）</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./ch2.html" class="pagination-link" aria-label="3月14日">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">3月14日</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

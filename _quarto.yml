@@ -1,0 +1,63 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "中级宏观经济学讲义"
+  author: "孙瑞，李惟简"
+  date: "2024/3/6"
+  downloads: pdf
+  sidebar:
+    style: docked
+    background: light
+  chapters:
+    - index.qmd
+    - ch1.qmd
+    - ch2.qmd
+    - ch3.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html: 
+    theme: cosmo
+    fontsize: 1.2em
+    code-fold: true
+    html-math-method: katex
+    smooth-scroll: true
+    page-layout: article
+    execute:
+      echo: false
+      warning: false
+      message: false
+    grid:
+      body-width: 1000px
+      margin-width: 250px
+      gutter-width: 1.5rem
+    reference-location: margin
+    citation-location: margin
+  pdf:
+    documentclass: ctexbook
+    include-in-header: 
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+    include-after-body: 
+      text: |
+        \printindex
+    geometry:
+      - top=30mm
+      - left=30mm
+      - heightrounded
+    fontfamily: libertinus
+    fontsize: 11pt
+    colorlinks: true
+    execute:
+      echo: false
+      warning: false
+      message: false
+    header-includes:
+      - \usepackage{fancyhdr}
+      - \pagestyle{fancy}
+      - \fancyhead[C]{莫道昆明池水浅，观鱼胜过富春江}

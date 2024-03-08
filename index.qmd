@@ -1,0 +1,6 @@
+# 前言 {.unnumbered}
+
+本讲义由[Quarto Book](https://quarto.org/docs/books)提供技术支持。本书的生成代码可以在如下的[Github仓库](https://George-Sun-Econ.github.io)获得并下载。
+
+See @knuth84 for additional discussion of literate programming.
+

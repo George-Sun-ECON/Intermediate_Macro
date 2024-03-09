@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>中级宏观经济学讲义 - 2&nbsp; 2024/3/15</title>
+<title>中级宏观经济学讲义 - 2&nbsp; 2024年3月15日</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,6 +70,49 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -82,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch2.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">2024/3/15</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch2.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">2024年3月15日</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -99,16 +142,6 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">中级宏观经济学讲义</a> 
         <div class="sidebar-tools-main">
-    <div class="dropdown">
-      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://github.com/George-Sun-ECON/Intermediate_Macro">
-            Source Code
-            </a>
-          </li>
-      </ul>
-    </div>
     <a href="./中级宏观经济学讲义.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
 </div>
     </div>
@@ -129,13 +162,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">2024/3/1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">2024年3月1日</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch2.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">2024/3/15</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">2024年3月15日</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -150,14 +183,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#长期产出的分配" id="toc-长期产出的分配" class="nav-link active" data-scroll-target="#长期产出的分配"><span class="header-section-number">2.1</span> 长期产出的分配</a>
+  <ul class="collapse">
+  <li><a href="#正式表述" id="toc-正式表述" class="nav-link" data-scroll-target="#正式表述"><span class="header-section-number">2.1.1</span> 正式表述</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">2024/3/15</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">2024年3月15日</span></h1>
 </div>
 
 
@@ -175,8 +217,34 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><em>作者：孙瑞</em></p>
+<section id="长期产出的分配" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="长期产出的分配"><span class="header-section-number">2.1</span> 长期产出的分配</h2>
+<p>前一节说明了长期产出的来源，现在介绍长期产出的分配。长期产出的分配一般是新古典宏观理论的一种代称。新古典宏观经济学是对古典宏观经济学的复兴，本质上是基于古典假设：</p>
+<ul>
+<li><p><strong>长期</strong>一般指价格灵活调整。但在该章的语境下，进一步增加了劳动和资本供给是外生给定的（满足潜在产出的全部数量）这一内涵。</p></li>
+<li><p>产品市场和要素市场都是<strong>竞争性</strong>，即经济主体都是同质、数量极多的价格接受者</p></li>
+<li><p>规模报酬不变的生产函数</p></li>
+<li><p>理性人假设（家户的偏好关系是偏序关系，即满足理性假设；厂商则最大化自己的利润）</p></li>
+<li><p>不存在外部性</p></li>
+<li><p>完全信息</p></li>
+</ul>
+<p>我们将看到这几个假设是如何使得新古典的分配理论足够简单优雅，并提供了一个经济学的乌托邦式的基准情况：控制其他条件不变，最有效率的分配是怎样的。</p>
+<section id="正式表述" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="正式表述"><span class="header-section-number">2.1.1</span> 正式表述</h3>
+<ul>
+<li><p>长期中，经济会在潜在产出运行，因此厂商会吸收所有的劳动和资本投入生产： <span class="math display">
+Y = Y(\bar{K},\bar{L})
+</span></p></li>
+<li><p>给定这个产出，每一单位的资本和劳动应该按边际产出分配全部产出： <span class="math display">
+w = \frac{\partial Y}{\partial L}|_{K=\bar{K},L=\bar{L}} \\
+r = \frac{\partial Y}{\partial K}|_{K=\bar{K},L=\bar{L}} \\
+</span></p></li>
+</ul>
+<p>现在考虑整个国家的所有人都是同质且密集的（<strong>竞争性</strong>），以至于我们可以将人口假设为1，每个人都不过是这个长度为1的线上的一个测度为0的点。那么我们不妨就只考虑一个人的行为，因为这个人的行为和其他人完全一样，只要一个人的行动分析清楚，其他人行动都完全清楚了（不过是一个积分/简单相加的事情）。因此，严谨的经济学教科书或论文中，常常会说：<em>让我们考虑一个<strong>“代表性家户”（representative household）</strong></em>。此外，这个代表性家户既是生产者，也是消费者，这也就意味着他拥有这个国家中唯一个企业，因此直觉上来说，这个经济的所有收入都归他所有。这一点对于理解后续的分配十分重要，因此我不吝赘述这一背景。这样的例子比如：荒岛上的鲁滨逊，因此经济学家也会用另一个词指代这一假设：<em>“让我们考虑一个鲁滨逊·克鲁索经济”</em>。</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -568,8 +636,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./ch1.html" class="pagination-link" aria-label="2024/3/1">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">2024/3/1</span></span>
+      <a href="./ch1.html" class="pagination-link" aria-label="2024年3月1日">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">2024年3月1日</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

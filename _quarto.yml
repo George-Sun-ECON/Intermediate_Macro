@@ -10,11 +10,6 @@ book:
   sidebar:
     style: docked
     background: light
-    tools:
-      - icon: github
-        menu:
-          - text: Source Code
-            url:  https://github.com/George-Sun-ECON/Intermediate_Macro
   chapters:
     - index.qmd
     - ch1.qmd

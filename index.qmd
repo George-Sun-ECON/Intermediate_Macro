@@ -5,6 +5,7 @@
 本书参考教材为格里高利·曼昆的《宏观经济学》@mankiw2010macroeconomics。
 
 正如1995年诺贝尔经济学奖得主，著名的宏观经济学家罗伯特·卢卡斯曾说过：
+
 > The consequences for human welfare involved in questions like these are simply staggering: Once one starts to think about them, it is hard to think about anything else.
 
 经济增长和经济波动的学问是如此重要且发人深思，他直接关乎每一个人的福祉问题，更是经济学者需要冲击的圣杯。宏观经济学就是这样一门让人感到激动人心的重要学问，希望各位同学可以认真学习，严谨思考，大胆假设，小心求问。欢迎来到北京大学国家发展研究院2024学年春季学期中级宏观经济学课程！

@@ -38,7 +38,7 @@ format:
       message: false
     grid:
       sidebar-width: 350px
-      body-width: 1000px
+      body-width: 800px
       margin-width: 250px
       gutter-width: 1.5rem
     reference-location: margin

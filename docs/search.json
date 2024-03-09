@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "中级宏观经济学讲义",
     "section": "",
-    "text": "前言\n本讲义由数据科学文档生成语言Quarto进行编译，并经Github Pages部署发布。\n本书参考教材为格里高利·曼昆的《宏观经济学》Mankiw and Scarth (2010)。\n\nMankiw, N Gregory, and William M Scarth. 2010. Macroeconomics (Canadian Edition). Macmillan.\n正如1995年诺贝尔经济学奖得主，著名的宏观经济学家罗伯特·卢卡斯曾说过： &gt; The consequences for human welfare involved in questions like these are simply staggering: Once one starts to think about them, it is hard to think about anything else.\n经济增长和经济波动的学问是如此重要且发人深思，他直接关乎每一个人的福祉问题，更是经济学者需要冲击的圣杯。宏观经济学就是这样一门让人感到激动人心的重要学问，希望各位同学可以认真学习，严谨思考，大胆假设，小心求问。欢迎来到北京大学国家发展研究院2024学年春季学期中级宏观经济学课程！",
+    "text": "前言\n本讲义由数据科学文档生成语言Quarto进行编译，并经Github Pages部署发布。\n本书参考教材为格里高利·曼昆的《宏观经济学》Mankiw and Scarth (2010)。\n\nMankiw, N Gregory, and William M Scarth. 2010. Macroeconomics (Canadian Edition). Macmillan.\n正如1995年诺贝尔经济学奖得主，著名的宏观经济学家罗伯特·卢卡斯曾说过：\n\nThe consequences for human welfare involved in questions like these are simply staggering: Once one starts to think about them, it is hard to think about anything else.\n\n经济增长和经济波动的学问是如此重要且发人深思，他直接关乎每一个人的福祉问题，更是经济学者需要冲击的圣杯。宏观经济学就是这样一门让人感到激动人心的重要学问，希望各位同学可以认真学习，严谨思考，大胆假设，小心求问。欢迎来到北京大学国家发展研究院2024学年春季学期中级宏观经济学课程！",
     "crumbs": [
       "前言"
     ]
@@ -84,7 +84,7 @@
     "href": "ch2.html#长期产出的分配",
     "title": "2  2024年3月15日",
     "section": "",
-    "text": "长期一般指价格灵活调整。但在该章的语境下，进一步增加了劳动和资本供给是外生给定的（满足潜在产出的全部数量）这一内涵。\n产品市场和要素市场都是竞争性，即经济主体都是同质、数量极多的价格接受者\n规模报酬不变的生产函数\n理性人假设（家户的偏好关系是偏序关系，即满足理性假设；厂商则最大化自己的利润）\n不存在外部性\n完全信息\n\n\n\n2.1.1 正式表述\n\n长期中，经济会在潜在产出运行，因此厂商会吸收所有的劳动和资本投入生产： \nY = Y(\\bar{K},\\bar{L})\n\n给定这个产出，每一单位的资本和劳动应该按边际产出分配全部产出： \nw = \\frac{\\partial Y}{\\partial L}|_{K=\\bar{K},L=\\bar{L}} \\\\\nr = \\frac{\\partial Y}{\\partial K}|_{K=\\bar{K},L=\\bar{L}} \\\\\n\n\n现在考虑整个国家的所有人都是同质且密集的（竞争性），以至于我们可以将人口假设为1，每个人都不过是这个长度为1的线上的一个测度为0的点。那么我们不妨就只考虑一个人的行为，因为这个人的行为和其他人完全一样，只要一个人的行动分析清楚，其他人行动都完全清楚了（不过是一个积分/简单相加的事情）。因此，严谨的经济学教科书或论文中，常常会说：让我们考虑一个“代表性家户”（representative household）。此外，这个代表性家户既是生产者，也是消费者，这也就意味着他拥有这个国家中唯一个企业，因此直觉上来说，这个经济的所有收入都归他所有。这一点对于理解后续的分配十分重要，因此我不吝赘述这一背景。这样的例子比如：荒岛上的鲁滨逊，因此经济学家也会用另一个词指代这一假设：“让我们考虑一个鲁滨逊·克鲁索经济”。",
+    "text": "长期一般指价格灵活调整。但在该章的语境下，进一步增加了劳动和资本供给是外生给定的（满足潜在产出的全部数量）这一内涵。\n产品市场和要素市场都是竞争性，即经济主体都是同质、数量极多的价格接受者\n规模报酬不变的生产函数\n理性人假设（家户的偏好关系是偏序关系，即满足理性假设；厂商则最大化自己的利润）\n不存在外部性\n完全信息\n\n\n\n2.1.1 正式表述\n\n长期中，经济会在潜在产出运行，因此厂商会吸收所有的劳动和资本投入生产： \nY = Y(\\bar{K},\\bar{L})\n\n给定这个产出，每一单位的资本和劳动应该按边际产出分配全部产出：\n\\begin{align}\nw &= \\frac{\\partial Y}{\\partial L}|_{K=\\bar{K},L=\\bar{L}} \\\\\n\nr &= \\frac{\\partial Y}{\\partial K}|_{K=\\bar{K},L=\\bar{L}} \\\\\n\\end{align}\n\n现在考虑整个国家的所有人都是同质且密集的（竞争性），以至于我们可以将人口假设为1，每个人都不过是这个长度为1的线上的一个测度为0的点。那么我们不妨就只考虑一个人的行为，因为这个人的行为和其他人完全一样，只要一个人的行动分析清楚，其他人行动都完全清楚了（不过是一个积分/简单相加的事情）。\n\n\n\n\n\n\nNote\n\n\n\n因此，严谨的经济学教科书或论文中，常常会说：“*让我们考虑一个“代表性家户”（representative household）**”。此外，这个代表性家户既是生产者，也是消费者，这也就意味着他拥有这个国家中唯一个企业，因此直觉上来说，这个经济的所有收入都归他所有。这一点对于理解后续的分配十分重要，因此我不吝赘述这一背景。这样的例子比如：荒岛上的鲁滨逊，因此经济学家也会用另一个词指代这一假设：“让我们考虑一个鲁滨逊·克鲁索经济”。",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>2024年3月15日</span>"
     ]

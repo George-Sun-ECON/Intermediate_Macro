@@ -245,53 +245,62 @@ window.Quarto = {
 <li><p>因此长期中，厂商会吸收所有的劳动和资本投入生产： <span class="math display">
 Y = Y(\bar{K},\bar{L})
 </span></p></li>
-<li><p>给定这个产出，每一单位的资本和劳动应该按边际产出分配全部产出：</p>
-<p><span class="math display">\begin{align}
-w &amp;= \frac{\partial Y}{\partial L}|_{K=\bar{K},L=\bar{L}} \\
-
-r &amp;= \frac{\partial Y}{\partial K}|_{K=\bar{K},L=\bar{L}} \\
-\end{align}</span></p></li>
+<li><p>给定这个产出，每一单位的资本和劳动应该按边际产出分配全部产出： <span class="math display">
+w = \frac{\partial Y}{\partial L}|_{K=\bar{K},L=\bar{L}}
+</span> <span class="math display">
+r = \frac{\partial Y}{\partial K}|_{K=\bar{K},L=\bar{L}}
+</span></p></li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 证明：为什么会按照边际产出进行分配？
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>第一章第5节说明了劳动力市场和资本市场的需求曲线本质上是由<span class="math inline">P= MPK</span>或<span class="math inline">P = MPL</span>决定的，其向下倾斜的形状由边际产出对于要素投入的单调递减性质所决定。进而，给定需求曲线，给定所有潜在的劳动力和资本供给，会形成惟一（良性假设下可以证明是惟一的）价格水平和数量水平，我们称价格和数量的二元组<span class="math inline">(p,q)</span>是一个<strong>均衡</strong>。那么如何通过除图形之外的方式求解这一均衡的结果呢？</p>
 <p>给定产品市场价格为<span class="math inline">P</span>，劳动力市场价格为<span class="math inline">W</span>，资本市场价格为<span class="math inline">R</span>：</p>
 <ul>
-<li><p>厂商选择当期资本资本存量<span class="math inline">K</span>和劳动力<span class="math inline">L</span>以最大化利润水平： <span class="math display">\begin{align}
-\max_{K,L} P \times PY(K,L) - W L - R K
-\end{align}</span> 求解这个无约束静态优化问题，得： <span class="math display">\begin{align}
-    P MPL - W &amp;= 0 \\
-    P MPK - R &amp;= 0
-\end{align}</span> 定义实际工资和实际利率为<span class="math inline">w = \frac{W}{P}</span>以及<span class="math inline">r = \frac{R}{P}</span></p></li>
-<li><p>家户选择当期的消费以最大化利润，他们无条件地供给所有资本存量和劳动： <span class="math display">\begin{align}
-  \max_{C} U(C) \\
-  \text{s.t.} P C = W \bar{L} + R \bar{K}
-\end{align}</span> 求解这个约束下静态最优化问题: <span class="math display">\begin{align}
-U'(C) = \lambda P \\
-P C = W \bar{L} + R \bar{K}
-\end{align}</span></p></li>
-<li><p>市场出清： <span class="math display">\begin{align}
-C &amp;= Y(K,L) \\
-K &amp;= \bar{K} \\
-L &amp;= \bar{L}
-\end{align}</span></p></li>
-<li><p>整理上述条件，价格决定逻辑是：根据厂商的两个最优化条件，以及代入了三个市场出清条件后消费者预算约束，这三个优化条件（因此此时消费者的消费选择条件可能是冗余的，往往产品数量大于1时这一条件才会被用来确定相对价格），大概率能求解出三个未知数：P,W,R（因为有解是有条件的，我们不希望犯下瓦尔拉斯当年的错误，条件是：方程组增广矩阵的秩等于系数矩阵的秩）。但实际上，我们完全可以不需要产品价格<span class="math inline">P</span>，而是用实际价格将价格系统降为两维，即只有<span class="math inline">(w,r)</span>，这样一来，给定边际产出递减，我们总是有唯一解： <span class="math display">\begin{align}
-    w &amp;= \frac{\partial Y}{\partial L}|_{K=\bar{K},L=\bar{L}} \\
-
-    r &amp;= \frac{\partial Y}{\partial K}|_{K=\bar{K},L=\bar{L}} \\
-\end{align}</span> 满足上述式子的价格-数量二元组：（w,r,K,L）就是一组一般均衡。</p></li>
+<li><p>厂商选择当期资本资本存量<span class="math inline">K</span>和劳动力<span class="math inline">L</span>以最大化利润水平： <span class="math display">
+  \max_{K,L} P \times PY(K,L) - W L - R K
+</span> 求解这个无约束静态优化问题，得： <span class="math display">
+      P MPL - W = 0
+</span> <span class="math display">
+      P MPK - R = 0
+</span> 定义实际工资和实际利率为<span class="math inline">w = \frac{W}{P}</span>以及<span class="math inline">r = \frac{R}{P}</span></p></li>
+<li><p>家户选择当期的消费以最大化利润，他们无条件地供给所有资本存量和劳动： <span class="math display">
+    \max_{C} U(C)
+</span> <span class="math display">
+    \text{s.t.} P C = W \bar{L} + R \bar{K}
+</span> 求解这个约束下静态最优化问题: <span class="math display">
+  U'(C) = \lambda P
+</span> <span class="math display">
+  P C = W \bar{L} + R \bar{K}
+</span></p>
+<ul>
+<li>市场出清： <span class="math display">
+C = Y(K,L)
+</span> <span class="math display">
+K = \bar{K}
+</span> <span class="math display">
+L = \bar{L}
+</span></li>
+</ul></li>
+<li><p>整理上述条件，价格决定逻辑是：根据厂商的两个最优化条件，以及代入了三个市场出清条件后消费者预算约束，这三个优化条件（因此此时消费者的消费选择条件可能是冗余的，往往产品数量大于1时这一条件才会被用来确定相对价格），大概率能求解出三个未知数：P,W,R（因为有解是有条件的，我们不希望犯下瓦尔拉斯当年的错误，条件是：方程组增广矩阵的秩等于系数矩阵的秩）。但实际上，我们完全可以不需要产品价格<span class="math inline">P</span>，而是用实际价格将价格系统降为两维，即只有<span class="math inline">(w,r)</span>，这样一来，给定边际产出递减，我们总是有唯一解： <span class="math display">
+      w = \frac{\partial Y}{\partial L}|_{K=\bar{K},L=\bar{L}}
+</span> <span class="math display">
+      r = \frac{\partial Y}{\partial K}|_{K=\bar{K},L=\bar{L}}
+</span> 满足上述式子的价格-数量二元组：（w,r,K,L）就是一组一般均衡。</p></li>
 </ul>
-<p>上述内容是宏观经济学中<strong>一般均衡</strong>的完整定义（一个简化的但是格式固定的版本）。在这个简单的一般均衡中，我们没有看到家户的要素供给（劳动和资本）的优化过程，但是厂商具有优化过程，且对于厂商而言，这个优化过程即是对要素市场的决策（要需求多少劳动和资本），也是对产品市场的决策（一旦决定了劳动和资本，产出也就立刻确定了）。因此长期中的分配理论本质上是长期中的产品市场均衡所衍生出来的，这一点我们将在之后不断看到，厂商往往只需要考虑一个市场的问题，另一个市场的优化也就自动解决了</p>
 </div>
 </div>
+</div>
+<p>上述内容是宏观经济学中<strong>一般均衡</strong>的完整定义（一个简化的但是格式固定的版本）。在这个简单的一般均衡中，我们没有看到家户的要素供给（劳动和资本）的优化过程，但是厂商具有优化过程，且对于厂商而言，这个优化过程即是对要素市场的决策（要需求多少劳动和资本），也是对产品市场的决策（一旦决定了劳动和资本，产出也就立刻确定了）。因此长期中的分配理论本质上是长期中的产品市场均衡所衍生出来的，这一点我们将在之后不断看到，厂商往往只需要考虑一个市场的问题，另一个市场的优化也就自动解决了。</p>
 <p>现在考虑整个国家的所有人都是同质且密集的（<strong>竞争性</strong>），以至于我们可以将人口假设为1，每个人都不过是这个长度为1的线上的一个测度为0的点。那么我们不妨就只考虑一个人的行为，因为这个人的行为和其他人完全一样，只要一个人的行动分析清楚，其他人行动都完全清楚了（不过是一个积分/简单相加的事情）。</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">

@@ -358,7 +358,7 @@ CPI=\frac{\sum \text{一篮子商品} \times \text{当期价格水平}}{\sum \te
 \] - CPI的一篮子商品只包括消费部分的代表性商品，不包括投资和政府购买。 -
 CPI会高估物价上升。因为没有考虑当前期商品的适应性调整，也没有考虑质量改进。
 
-\section{长期产出的来源}\label{ux957fux671fux4ea7ux51faux7684ux6765ux6e90}
+\section{长期产出的来源}\label{sec:ch1-sec5}
 
 经济体的长期产出由要素的投入量所决定，所谓积水成渊也。现实中常关注的要素投入包括资本(K)和劳动(L),总产出(Y)可以表示为
 \[
@@ -427,11 +427,14 @@ MPL = \frac{\partial AK^{\alpha}L^{1-\alpha}}{\partial L} = A(1-\alpha)K^{\alpha
 
 \section{长期产出的分配}\label{ux957fux671fux4ea7ux51faux7684ux5206ux914d}
 
+\subsection{概述}\label{ux6982ux8ff0}
+
 前一节说明了长期产出的来源，现在介绍长期产出的分配。长期产出的分配一般是新古典宏观理论的一种代称。新古典宏观经济学是对古典宏观经济学的复兴，本质上是基于古典假设：
 
 \begin{itemize}
+\tightlist
 \item
-  \textbf{长期}一般指价格灵活调整。但在该章的语境下，进一步增加了劳动和资本供给是外生给定的（满足潜在产出的全部数量）这一内涵。
+  \textbf{长期}指价格灵活调整。但在该章的语境下，进一步增加了劳动和资本供给是外生给定的（满足潜在产出的全部数量）这一内涵。
 \item
   产品市场和要素市场都是\textbf{竞争性}，即经济主体都是同质、数量极多的价格接受者
 \item
@@ -450,8 +453,9 @@ MPL = \frac{\partial AK^{\alpha}L^{1-\alpha}}{\partial L} = A(1-\alpha)K^{\alpha
 
 \begin{itemize}
 \item
-  长期中，经济会在潜在产出运行，因此厂商会吸收所有的劳动和资本投入生产：
-  \[
+  本质上，长期产出是指经济体所能达到的最有效率的前提下的最大（潜在）产出，此时，产品市场均衡自动满足，我们只需要考虑要素市场均衡。
+\item
+  因此长期中，厂商会吸收所有的劳动和资本投入生产： \[
   Y = Y(\bar{K},\bar{L})
   \]
 \item
@@ -464,12 +468,57 @@ MPL = \frac{\partial AK^{\alpha}L^{1-\alpha}}{\partial L} = A(1-\alpha)K^{\alpha
   \end{align}
 \end{itemize}
 
+\begin{tcolorbox}[enhanced jigsaw, coltitle=black, bottomtitle=1mm, opacityback=0, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, breakable, arc=.35mm, left=2mm, rightrule=.15mm, toptitle=1mm, opacitybacktitle=0.6, titlerule=0mm, bottomrule=.15mm, colback=white, leftrule=.75mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{证明：为什么会按照边际产出进行分配？}, colframe=quarto-callout-tip-color-frame]
+
+第一章第5节（(\textbf{ref?})(sec:ch1-sec5)）
+说明了劳动力市场和资本市场的需求曲线本质上是由\(P= MPK\)或\(P = MPL\)决定的，其向下倾斜的形状由边际产出对于要素投入的单调递减性质所决定。进而，给定需求曲线，给定所有潜在的劳动力和资本供给，会形成惟一（良性假设下可以证明是惟一的）价格水平和数量水平，我们称价格和数量的二元组\((p,q)\)是一个\textbf{均衡}。那么如何通过除图形之外的方式求解这一均衡的结果呢？
+
+给定产品市场价格为\(P\)，劳动力市场价格为\(W\)，资本市场价格为\(R\)： -
+厂商选择当期资本资本存量\(K\)和劳动力\(L\)以最大化利润水平：
+\begin{align}
+    \max_{K,L} P \times PY(K,L) - W L - R K
+    \end{align} 求解这个无约束静态优化问题，得： \begin{align}
+        P MPL - W &= 0 \\
+        P MPK - R &= 0 
+    \end{align}
+定义实际工资和实际利率为\(w = \frac{W}{P}\)以及\(r = \frac{R}{P}\)
+
+\begin{itemize}
+\item
+  家户选择当期的消费以最大化利润，他们无条件地供给所有资本存量和劳动：
+  \begin{align}
+    \max_{C} U(C) \\
+    \text{s.t.} P C = W \bar{L} + R \bar{K}
+  \end{align} 求解这个约束下静态最优化问题: \begin{align}
+  U'(C) = \lambda P \\
+  P C = W \bar{L} + R \bar{K}
+  \end{align}
+\item
+  市场出清： \begin{align}
+  C &= Y(K,L) \\
+  K &= \bar{K} \\
+  L &= \bar{L}
+  \end{align}
+\item
+  整理上述条件，价格决定逻辑是：根据厂商的两个最优化条件，以及代入了三个市场出清条件后消费者预算约束，这三个优化条件（因此此时消费者的消费选择条件可能是冗余的，往往产品数量大于1时这一条件才会被用来确定相对价格），大概率能求解出三个未知数：P,W,R（因为有解是有条件的，我们不希望犯下瓦尔拉斯当年的错误，条件是：方程组增广矩阵的秩等于系数矩阵的秩）。但实际上，我们完全可以不需要产品价格\(P\)，而是用实际价格将价格系统降为两维，即只有\((w,r)\)，这样一来，给定边际产出递减，我们总是有唯一解：
+  \begin{align}
+      w &= \frac{\partial Y}{\partial L}|_{K=\bar{K},L=\bar{L}} \\
+
+      r &= \frac{\partial Y}{\partial K}|_{K=\bar{K},L=\bar{L}} \\
+   \end{align}
+  满足上述式子的价格-数量二元组：（w,r,K,L）就是一组一般均衡。
+\end{itemize}
+
+上述内容是宏观经济学中\textbf{一般均衡}的完整定义（一个简化的但是格式固定的版本）。在这个简单的一般均衡中，我们没有看到家户的要素供给（劳动和资本）的优化过程，但是厂商具有优化过程，且对于厂商而言，这个优化过程即是对要素市场的决策（要需求多少劳动和资本），也是对产品市场的决策（一旦决定了劳动和资本，产出也就立刻确定了）。因此长期中的分配理论本质上是长期中的产品市场均衡所衍生出来的，这一点我们将在之后不断看到，厂商往往只需要考虑一个市场的问题，另一个市场的优化也就自动解决了
+
+\end{tcolorbox}
+
 现在考虑整个国家的所有人都是同质且密集的（\textbf{竞争性}），以至于我们可以将人口假设为1，每个人都不过是这个长度为1的线上的一个测度为0的点。那么我们不妨就只考虑一个人的行为，因为这个人的行为和其他人完全一样，只要一个人的行动分析清楚，其他人行动都完全清楚了（不过是一个积分/简单相加的事情）。
 
-\begin{tcolorbox}[enhanced jigsaw, colbacktitle=quarto-callout-tip-color!10!white, rightrule=.15mm, colback=white, left=2mm, coltitle=black, colframe=quarto-callout-tip-color-frame, opacityback=0, breakable, arc=.35mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, titlerule=0mm, bottomrule=.15mm, opacitybacktitle=0.6, bottomtitle=1mm, toprule=.15mm, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, coltitle=black, bottomtitle=1mm, opacityback=0, toprule=.15mm, colbacktitle=quarto-callout-note-color!10!white, breakable, arc=.35mm, left=2mm, rightrule=.15mm, toptitle=1mm, opacitybacktitle=0.6, titlerule=0mm, bottomrule=.15mm, colback=white, leftrule=.75mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, colframe=quarto-callout-note-color-frame]
 
-因此，严谨的经济学教科书或论文中，常常会说：``*让我们考虑一个``代表性家户''（representative
-household）**''。此外，这个代表性家户既是生产者，也是消费者，这也就意味着他拥有这个国家中唯一个企业，因此直觉上来说，这个经济的所有收入都归他所有。这一点对于理解后续的分配十分重要，因此我不吝赘述这一背景。这样的例子比如：荒岛上的鲁滨逊，因此经济学家也会用另一个词指代这一假设：``\emph{让我们考虑一个鲁滨逊·克鲁索经济}''。
+因此，严谨的经济学教科书或论文中，常常会说：``\textbf{让我们考虑一个``代表性家户''（representative
+household）}''。此外，这个代表性家户既是生产者，也是消费者，这也就意味着他拥有这个国家中唯一个企业，因此直觉上来说，这个经济的所有收入都归他所有。这一点对于理解后续的分配十分重要，因此我不吝赘述这一背景。这样的例子比如：荒岛上的鲁滨逊，因此经济学家也会用另一个词指代这一假设：``\emph{让我们考虑一个鲁滨逊·克鲁索经济}''。
 
 \end{tcolorbox}
 

@@ -27,7 +27,7 @@ format:
       light: cosmo
     css: custom.css
     backgroundcolor: "#F5F5F5"
-    fontsize: 11pt
+    fontsize: 12pt
     code-fold: true
     html-math-method: katex
     smooth-scroll: true
@@ -38,7 +38,7 @@ format:
       message: false
     grid:
       sidebar-width: 350px
-      body-width: 800px
+      body-width: 850px
       margin-width: 250px
       gutter-width: 1.5rem
     reference-location: margin

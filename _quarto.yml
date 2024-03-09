@@ -5,11 +5,14 @@ project:
 book:
   title: "中级宏观经济学讲义"
   author: "孙瑞，李惟简"
-  date: "2024/3/8"
+  favicon: cover-economic-ai.png
+  date: "2024/3/9"
   downloads: pdf
   sidebar:
     style: docked
-    background: light
+    background: "#F5F5F5"
+    logo: cover-economic-ai.png
+    search: true
   chapters:
     - index.qmd
     - ch1.qmd
@@ -20,7 +23,10 @@ bibliography: references.bib
 
 format:
   html: 
-    theme: cosmo
+    theme: 
+      light: cosmo
+    css: custom.css
+    backgroundcolor: "#F5F5F5"
     fontsize: 11pt
     code-fold: true
     html-math-method: katex
